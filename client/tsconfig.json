@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "es5",                      // JavaScript version to output
+      "lib": ["dom", "esnext"],              // Includes DOM and ESNext features
+      "jsx": "react",                       // Use JSX with React
+      "module": "esnext",                    // Module system (use es modules)
+      "moduleResolution": "node",            // How modules are resolved
+      "strict": true,                        // Enable strict type checking
+      "esModuleInterop": true,               // Ensure compatibility with CommonJS
+      "skipLibCheck": true,                  // Skip library checks for faster builds
+      "forceConsistentCasingInFileNames": true,  // Enforce consistent file casing
+      "baseUrl": ".",                        // Set the base path for module imports
+      "paths": {
+        "@/*": ["./src/*"]                   // Alias for src directory
+      }
+    },
+    "include": [
+      "src/**/*"                             // Include all files inside the src folder
+    ],
+    "exclude": [
+      "node_modules"                         // Exclude the node_modules folder
+    ]
+  }
+  
